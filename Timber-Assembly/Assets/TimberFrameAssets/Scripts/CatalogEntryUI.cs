@@ -21,6 +21,7 @@ public class CatalogEntryUI : MonoBehaviour
     private void Awake()
     {
         button.onClick.AddListener(() => Selected?.Invoke(PartId));
+        Selected?.Invoke(PartId);
     }
 
     public void Setup(PartTypeEntry entry)
