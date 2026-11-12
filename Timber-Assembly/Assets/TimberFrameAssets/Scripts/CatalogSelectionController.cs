@@ -17,7 +17,7 @@ public class CatalogSelectionController : MonoBehaviour
     {
         Debug.Log("[Controller] OnEnable (subscribing)");
         typePanel.EntrySelected += OnTypeSelected;
-        instancePanel.InstanceSelected -= OnInstanceSelected;
+        instancePanel.InstanceSelected += OnInstanceSelected;
     }
 
     private void OnDisable()

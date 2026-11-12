@@ -18,8 +18,6 @@ public class InstanceListPanel : MonoBehaviour
 
     public void Show(PartInfo.ID pID)
     {
-        Debug.Log($"InstanceList] Show({pID}) prefabNull={entryPrefab == null} containerNull={entryContainer == null}");
-
         Clear();
 
         int count = 0;
@@ -42,7 +40,6 @@ public class InstanceListPanel : MonoBehaviour
             currentTitle.StringChanged += UpdateTitle;
         }
 
-        Debug.Log($"[InstanceList] created {count}; container children={entryContainer.childCount}; activeInHierarchy={gameObject.activeInHierarchy}");
         gameObject.SetActive(true);
     }
 
